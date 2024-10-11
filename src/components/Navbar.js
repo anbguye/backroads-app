@@ -17,8 +17,7 @@ const Navbar = () => {
           {pageLinks.map((link) => {
             return (
               <li key={link.id}>
-                <a href={link.href} className='nav-link'></a>
-                {link.text}
+                <a href={link.href} className='nav-link'>{link.text}</a>
               </li>
             )
           })}
